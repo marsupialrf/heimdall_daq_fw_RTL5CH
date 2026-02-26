@@ -494,7 +494,7 @@ int main( int argc, char** argv )
         memset(rtl_rec, 0, sizeof(struct rtl_rec_struct));
 
         // Get device index by serial number
-        sprintf(dev_serial, "%d", 1000+i);
+        sprintf(dev_serial, "%d", 10000+i);
         int dev_index = rtlsdr_get_index_by_serial(dev_serial);
         rtl_rec->dev_ind = dev_index;
         log_info("Device serial:%s, index: %d",dev_serial, dev_index);
